@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600|Architects Daughter" rel="stylesheet" type="text/css" />
+    	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Toast-master/css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-pure.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://code.angularjs.org/1.4.7/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+    <script src="postscribe-master/htmlParser/htmlParser.js"></script>
+    <script src="postscribe-master/postscribe.js"></script>
+    <script src="app.js"></script>
+    <script src="common/mainController.js"></script>
+    <script src="common/slidesController.js"></script>
+    <title>{{ title }} : ArmadilloCon 38</title>
+</head>
+<body ng-controller="mainController">
+<div class="grid">
+
+<div class="grid__col grid__col--4-of-5">
+
+    <div class="menu-bar">
+	<label for="show-menu" class="show-menu">Show Menu</label>
+	<input type="checkbox" id="show-menu" role="button">
+		<ul id="menu">
+		<li>
+			<a href="#/">About &darr;</a>
+			<ul class="hidden">
+				<li><a href="#/about">About</a></li>
+				<li><a href="#/policies">Policies</a></li>
+				<li><a href="#/hotel">Hotel</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#/guests">Programming &darr;</a>
+			<ul class="hidden">
+				<li><a href="#/guests">Guests</a></li>
+				<li><a href="#/guest_bios">Guest biographies</a></li>
+				<li><a href="#/grid">Programming Grid</a></li>
+				<li><a href="#/sched">Detailed Schedule</a></li>
+			</ul>
+		</li>
+		<li><a href="#/register">Register</a></li>
+		<li>
+			<a href="#/artshow">Participate &darr;</a>
+			<ul class="hidden">
+				<li><a href="#/artshow">Art Show</a></li>
+				<li><a href="#/dealers">Dealers</a></li>
+				<li><a href="#/gaming">Gaming</a></li>
+				<li><a href="#/writers_workshop">Writers' Workshop</a></li>
+			</ul>
+		</li>
+		<li><a href="#/contact">Contact</a></li>
+		<li><a href="#/program_book">Program Book</a></li>
+	</ul>
+    </div>
+
+<div class="grid__col grid__col--5-of-5">
+<div class="center-block">
+<p class="header title-header"><b>ArmadilloCon 38</b></p>
+<p class="header subheader"><b>Austin's literary science fiction and fantasy convention</b></p>
+<p class="header location-date"><b>July 29-31 2016, Austin, Texas</b></p>
+<p class="header location-date"><b>Omni Southpark hotel, 4140 Governors Row, Austin, Texas 78744</b></p>
+
+<p class="guest">
+Guest of Honor: <a href="http://wesleychu.com/"><b>Wesley Chu</b></a> <i class="fa fa-asterisk"></i> Special Guest: <b>TBD</b> <i class="fa fa-asterisk"></i> Artist Guest: <b>Christina Hess</b> <i class="fa fa-asterisk"></i> Editor Guest: <b>TBD</b></a> <i class="fa fa-asterisk"></i> Fan Guest: <b>Ken Keller</b> <i class="fa fa-asterisk"></i> Toastmaster: <b>TBD</b>
+</p>
+
+</div>
+</div>
+
+        <div class="page center-block" id="view" ng-view></div>
+
+<div id="statcounterInd"></div>
+
+
+</body>
+</html>

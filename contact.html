@@ -1,0 +1,79 @@
+<div class="grid__col grid__col--2-of-5">
+  <h2 ng-hide="receivedMode">Contact the ArmadilloCon 38 committee:</h2>      
+
+<div><h3>{{ email_sent }}</h3> </div>
+
+<form method="post" name="contactForm" novalidate>
+  <div class="form-group">
+    <label for="sender_name">Your name* : </label> <span class="form-group" ng-show="receivedMode">{{ sender_name }}</span>
+  </div>
+  <div class="form-group" ng-hide="receivedMode">
+    <input type="text" name="sender_name" ng-model="sender_name" maxlength="80" required>
+    <span style="color:red" ng-show="contactForm.sender_name.$dirty && contactForm.sender_name.$invalid">
+    	<span ng-show="contactForm.sender_name.$error.required">Sender name is required.</span>
+    </span>
+  </div>
+
+  <div class="form-group">
+    <label for="email_from">Your e-mail address* : </label> <span class="form-group" ng-show="receivedMode">{{ email_from }}</span>
+  </div>
+  <div class="form-group" ng-hide="receivedMode">
+    <input type="email" id="email_from" name="email_from" ng-model="email_from" maxlength="80" ng-blur="setTheNeedToValidate()" ng-focus = "removeTheNeedToValidate()" required>
+    <span style="color:red" ng-show="rightMomentToValidate">
+		<span ng-show="contactForm.email_from.$error.required">Email is required.</span>
+		<span ng-show="contactForm.email_from.$error.email">Invalid email address.</span>
+    </span>
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Subject* : </label> <span class="form-group" ng-show="receivedMode">{{ subject }}</span>
+  </div>
+  <div class="form-group" ng-hide="receivedMode">
+    <input type="text" id="subject" name="subject" ng-model="subject" maxlength="120" required>
+    <span style="color:red" ng-show="contactForm.subject.$dirty && contactForm.subject.$invalid">
+    	<span ng-show="contactForm.subject.$error.required">Subject is required.</span>
+    </span>
+  </div>
+
+  <div class="form-group">
+    <label for="category">Category* : </label> <span class="form-group" ng-show="receivedMode">{{ category }}</span>
+  </div>
+
+  <div class="form-group" ng-hide="receivedMode">
+	<select ng-model="category" name="category" required>
+  	<option value="art_show_and_auction">Art Show and Auction</option>
+  	<option value="chairs">Chairs</option>
+  	<option value="childrens_programming">Children's Programming</option>
+  	<option value="conSuite">ConSuite</option>
+  	<option value="dealers_room">Dealers' Room</option>
+  	<option value="gaming">Gaming</option>
+  	<option value="guest_liaison">Guest Liaison</option>
+  	<option value="hotel_liaison">Hotel Liaison</option>
+  	<option value="parties">Parties</option>
+  	<option value="program_book">Program Book</option>
+  	<option value="programming">Programming</option>
+  	<option value="publicity">Publicity</option>
+  	<option value="registration">Registration</option>
+  	<option value="volunteering">Volunteering</option>
+  	<option value="website_feedback" selected="selected">Website feedback</option>
+  	<option value="writers_workshop">Writers' Workshop</option>
+	</select>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message* : </label> <span class="form-group" ng-show="receivedMode">{{ message }}</span>
+  </div>
+  <div class="form-group" ng-hide="receivedMode">
+    <textarea name="message" ng-model="message" cols="60" rows="5" required></textarea>
+  </div>
+  <span style="color:red" ng-show="contactForm.message.$dirty && contactForm.message.$invalid">
+    	<span ng-show="contactForm.message.$error.required">Message is required.</span>
+  </span>
+</p>
+
+  <button type="submit" class="btn btn-default" ng-hide="receivedMode" ng-disabled="contactForm.sender_name.$invalid || contactForm.email_from.$invalid || contactForm.subject.$invalid || contactForm.category.$invalid || contactForm.message.$invalid" ng-click="send_email()">Submit</button>
+</form>
+
+<div id="statcounter"></div>
+
+</div>

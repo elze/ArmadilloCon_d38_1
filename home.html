@@ -1,0 +1,16 @@
+<div ng-controller="slidesController">
+  <div>
+    <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+      <uib-slide ng-repeat="slide in slides" active="slide.active">
+	<div>
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        </div>
+         <div class="carousel-caption" style="margin:auto; width: {{ slide.width }}" ng-bind-html="slide.text | unsafe">
+        </div>
+      </uib-slide>
+
+    </uib-carousel>
+
+  </div>
+
+</div>

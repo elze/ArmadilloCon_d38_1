@@ -1,0 +1,930 @@
+<div class="grid__col grid__col--5-of-5">
+<table border>
+<tr>
+<th>Friday</th>
+<th>Ballroom D</th>
+<th>Ballroom E</th>
+<th>Ballroom F</th>
+<th>Southpark B</th>
+<th>Conference Center</th>
+<th>Lobby</th>
+</tr>
+<tr>
+<td valign=top>4:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Welcome to ArmadilloCon</b><br>
+<i>Bobo, Burton, Juday*, Reisman</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>4:30 PM</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>5:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Alternate History</b><br>
+<i>Antonelli, Brown*, Dimond, Kimbriel, Mills, Waldrop</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Researching Your Book</b><br>
+<i>Blaschke, Cheney*, Moyer, Osborne, Thomas, Wood</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Growing the Next Generation of Readers</b><br>
+<i>Griffin, Jacobs, Mancusi, Rylander, Sarath*, Stoddard</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Eugene Fischer</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>5:30 PM</td>
+<td halign=top>&nbsp;</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Eric Bakutis</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>6:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Humor in SF/F</b><br>
+<i>Chang, Ewing*, J. Moore, Sanger</i>
+</td>
+<td rowspan=2 valign=top>
+<b><i>Game of Thrones</i>: Comparing the book to the TV show</b><br>
+<i>Bakutis, Benjamin, Clarke, Finn, Picacio, Swendson*</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Favorite Webcomics</b><br>
+<i>Fischer, Melton, Rose</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Dantzel Cherry</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Pauline Baird Jones</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>6:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Julia Mandala</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Sanford Allen</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>7:00 PM</td>
+<td valign=top>
+<b>Opening Ceremonies</b><br>
+<i>DeNardo, Duchamp, Juday, Kelley, Leicht*, Liu, Morrow, C. Siros</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>7:30 PM</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td rowspan=4 valign=top>
+<b>Meet the Pros Party</b><br>
+<i></i>
+</td>
+</tr>
+<tr>
+<td valign=top>8:00 PM</td>
+<td rowspan=2 valign=top>
+<b>New Twists on Urban Fantasy</b><br>
+<i>Clevenger, Mancusi*, J. Moore, Richerson</i>
+</td>
+<td rowspan=2 valign=top>
+<b>The Art of the Short Story</b><br>
+<i>Allen, Antonelli, Bey, Griffin, Mandala, Wade*</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Writing for Film and TV</b><br>
+<i>Benjamin, Cargill, de Orive, Lansdale*, Sullivan</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Paige Ewing</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>David Hardy</i>
+</td>
+</tr>
+<tr>
+<td valign=top>8:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Amanda Downum</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Katharine Eliska Kimbriel</i>
+</td>
+</tr>
+<tr>
+<td valign=top>9:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Work of James Morrow</b><br>
+<i>Brown, Lalumiere*, N. J. Moore, Schwarz, Weisman</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Classic Feminist SF</b><br>
+<i>Johnson, Juday, Latner, Reed, Reisman*, Sarath</i>
+</td>
+<td rowspan=2 valign=top>
+<b>SF TV Shows We're Anticipating</b><br>
+<i>Allen*, Frank, Klaw, Oliver, Rountree, </i>
+</td>
+<td rowspan=2 valign=top>
+<b>Dual Reading</b><br>
+<i>Eudaly, Finn</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>9:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>C. Robert Cargill</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>10:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Badass, Babe, or None of the Above: Are Women's Archetypes Evolving (or Not) in SF/F Literature?</b><br>
+<i>Cherry, Downum*, Reed, Wright</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Love in the Time of Vampires</b><br>
+<i>Clevenger, Mancusi, Sherlock, White*</i>
+</td>
+<td rowspan=2 valign=top>
+<b>The Map vs. The Territory</b><br>
+<i>Gibbons*, Simmons</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Fred Stanton</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Josh Rountree</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>10:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Matt Cardin</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Kenneth Mark Hoover</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+</table><p>
+<table border>
+<tr>
+<th>Saturday</th>
+<th>Ballroom D</th>
+<th>Ballroom E</th>
+<th>Ballroom F</th>
+<th>Southpark A</th>
+<th>Southpark B</th>
+<th>Conference Center</th>
+<th>Dealers' Room</th>
+<th>Con Suite</th>
+</tr>
+<tr>
+<td valign=top>10:00 AM</td>
+<td rowspan=2 valign=top>
+<b>Stump the Panel: Make Up an SF/F Use for an Everyday Object</b><br>
+<i>Cheney*, Mandala, Stoddard, Rose, Rountree</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Silkpunk: Asian themes and influences in SF/F</b><br>
+<i>Chu, Kerr, Kimbriel, Landon, Liu*, Oliver</i>
+</td>
+<td rowspan=2 valign=top>
+<b>What Sciences Haven't Been Used?</b><br>
+<i>Allen, Ledbetter*, J. Moore, Simmons, Yoachim</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Hobbit Movies</b><br>
+<i>Blaschke, Carl, de Orive, Ewing, Swendson*, Wilson</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Rick Klaw</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Mari Mancusi</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>10:30 AM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Claude Lalumiere</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Marguerite Reed</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>11:00 AM</td>
+<td rowspan=2 valign=top>
+<b>Learning to Write: Recommended Workshops, Books and Classes</b><br>
+<i>Cardin, Catmull*, K. M. Hoover, Maresca, Wells, Yoachim</i>
+</td>
+<td rowspan=2 valign=top>
+<b><i>Hunger Games</i> vs. <i>Divergent</i></b><br>
+<i>Burton*, Cherry, P. J. Hoover, Prevost, Rylander</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Fan Guest Interview</b><br>
+<i>DeNardo, Johnson*, Person*</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Dinosaurs in SF</b><br>
+<i>Cupp, Hardy, Leicht*, Reed, Rogers</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Cassandra Rose Clarke</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Brust, Chu, Liu, N. J. Moore, Morrow, White</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>11:30 AM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>James Stoddard</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Cary Osborne</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>John Hornor Jacobs</i>
+</td>
+</tr>
+<tr>
+<td valign=top>Noon</td>
+<td rowspan=2 valign=top>
+<b>SF Mysteries</b><br>
+<i>Crider, Cupp*, Lalumiere, Melton, Mills, Sarath</i>
+</td>
+<td rowspan=2 valign=top>
+<b>How to Sell a Book to Aqueduct Press</b><br>
+<i>Duchamp, N. J. Moore*, Ward, Weisman</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Artist Guest Interview</b><br>
+<i>Kelley, Picacio*, Zrubek*</i>
+</td>
+<td rowspan=2 valign=top>
+<b>How to Draw Dragons and Armadillos</b><br>
+<i>Sherlock</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Jessica Reisman</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Reading</b><br>
+<i>Joe Lansdale</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Antonelli, Clarke, Moyer, Porter, Wood</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Space Squid Readings</b><br>
+<i>Bey, Chang</i>
+</td>
+</tr>
+<tr>
+<td valign=top>12:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Juan Perez</i>
+</td>
+</tr>
+<tr>
+<td valign=top>1:00 PM</td>
+<td rowspan=2 valign=top>
+<b>The Work and Influence of H. P. Lovecraft</b><br>
+<i>de Orive, Downum, Person, Spencer, Stanton, Webb*</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Private Space Travel</b><br>
+<i>Abell*, Frank, Gibbons, Jackson, Ledbetter, Latner</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Betrayal With Integrity: Conformance and Estrangement in Translating Chinese SF</b><br>
+<i>Liu</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Writing a Strong Teen Protagonist</b><br>
+<i>Blaschke*, Griffin, P. J. Hoover, Kerr, Mancusi, Prevost</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Martha Wells</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Loteria!</b><br>
+<i>Picacio</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Cargill, Catmull, Ewing, K. M. Hoover, Jacobs, Perez</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>1:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Rob Rogers</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>2:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Fannish Feud</b><br>
+<i>Bobo, DeNardo, Duchamp, Eudaly, Kelley, Leicht*, Hollas, Liu, Morrow, Sarath, Simpson, Wilson</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Writing Prompts to Get Your Creative Juices Flowing</b><br>
+<i>Bracken, Brust, Clevenger*, Lansdale, Mills, Webb</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Virtual Reality Presentation</b><br>
+<i>Bakutis</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Broad Universe</b><br>
+<i>Burton, Cheney, Jones, Latner*, Oliver, Ward, Wright</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Scott Cupp</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Trakena Prevost</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Cardin, Cherry, Downum, Kimbriel, Mancusi, Stoddard</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>2:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Christopher Brown</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>William Ledbetter</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>3:00 PM</td>
+<td rowspan=2 valign=top>
+<b>What You Should Have Read in 2014-2015</b><br>
+<i>DeNardo, Landon, Muenzler*, White, W. Siros</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Career Adjustments for the Writer</b><br>
+<i>Liu, Maresca, Southard, Swendson, Weisman, Wells*</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Hayabusa 2 Spacecraft Mission</b><br>
+<i>Abell</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Time Travel: Essential Books and Stories</b><br>
+<i>Finn, Griffin, Jones, Lalumiere, Wood</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Jayme Lynn Blaschke</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Wesley Chu</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Kelley, Johnson, Mandala, Osborne, Thomas, Waldrop</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>3:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Lou Antonelli</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Patrice Sarath</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>4:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Speculative Fiction as a Mirror to Religion</b><br>
+<i>Blaschke*, Cardin, Kimbriel, Marmell, Morrow, Swendson</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Editor Guest Interview</b><br>
+<i>Brown*, Dimond*, Duchamp</i>
+</td>
+<td rowspan=2 valign=top>
+<b>History of the Illustrated 007</b><br>
+<i>Porter</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Ray Bradbury: A Consideration of a Body of Work</b><br>
+<i>Catmull, Crider, Lansdale, Spencer, Stoddard, Sullivan, Wade*</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Fandom before the Internet</b><br>
+<i>Bobo, Jackson*, Sherlock, W. Siros, Wilson</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Dual Reading </b><br>
+<i>Brust, White</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Cheney, Eudaly, Finn, Latner, Reed, Webb, Wells</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>4:30 PM</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>5:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Kid Scary vs. Adult Scary</b><br>
+<i>Catmull*, Clarke, Griffin, Jacobs, Richerson, Waldrop</i>
+</td>
+<td rowspan=4 valign=top>
+<b>Charity Auction</b><br>
+<i>Leicht</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Artist Guest Slide Show</b><br>
+<i>Kelley</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Poetry Round Robin Reading</b><br>
+<i>Moyer, Muenzler, Perez*, Rose, Sanger, Simmons</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Caroline M Yoachim</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>John Gibbons</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Allen, Bey, Carl, Cupp, Melton, Sarath</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>5:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Don Webb</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Alexis Glynn Latner</i>
+</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>6:00 PM</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td rowspan=2 valign=top>
+<b>Attracting and Growing an Audience for Your Work</b><br>
+<i>Eudaly*, K. M. Hoover, Melton, Picacio, Rose</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Alan Porter</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>P J Hoover</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>6:30 PM</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Michael Bracken</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Ernie Wood</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>7:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Southern Gothic Fiction</b><br>
+<i>Lansdale*, Richerson, Southard, Spencer, Wade, Wood</i>
+</td>
+<td rowspan=4 valign=top>
+<b>Art Auction</b><br>
+<i>Zrubek</i>
+</td>
+<td rowspan=2 valign=top>
+<b>How Would Discovery of Alien Life Affect Us?</b><br>
+<i>de Orive*, Ledbetter, Sarath, Schwarz, Wright</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Zombies in Fiction and on TV</b><br>
+<i>Clevenger*, Mancusi, Maresca, Perez, Rountree, </i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Nancy Jane Moore</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Shanna Swendson</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>7:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Henry Melton</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Katherine Catmull</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>8:00 PM</td>
+<td rowspan=2 valign=top>
+<b>SF from an International Perspective</b><br>
+<i>Brown, Hardy, Morrow*, Porter</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Food in SF</b><br>
+<i>Allen, Brust, Mandala*, Sherlock, White</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Writing for the Gaming Industry</b><br>
+<i>Bakutis*, Chang, de Orive, Marmell, Stanton</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Lee Thomas</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>8:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Derek Austin Johnson</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Nate Southard</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>9:00 PM</td>
+<td rowspan=2 valign=top>
+<b>The Hugo Award's Struggle for Relevance</b><br>
+<i>Antonelli, Landon, Muenzler*, Reed, Weisman</i>
+</td>
+<td rowspan=2 valign=top>
+<b>What Writers' Workshops Have Done for Me</b><br>
+<i>Brust, Leicht, Melton, Reisman*, Thomas, Wagner</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Economics and Infrastructure in World-building</b><br>
+<i>Bakutis, Carl, Dimond*, K. M. Hoover, Stoddard, Wells</i>
+</td>
+<td rowspan=2 valign=top>
+<b>SF Movies from Last Year</b><br>
+<i>Cargill, Clarke, DeNardo*, Johnson, Klaw, Wright</i>
+</td>
+<td valign=top>
+<b>&nbsp;</b><br>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Marshall Ryan Maresca </i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>9:30 PM</td>
+<td halign=top>&nbsp;</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Adrian Simmons</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>10:00 PM</td>
+<td rowspan=2 valign=top>
+<b>SF as a Survival Guide</b><br>
+<i>P. J. Hoover, Perez*, Person, Schwarz, Thomas</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Writing Erotic Fiction</b><br>
+<i>Bracken, Crider, Ewing, Rose*, Webb</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Comic Books on TV</b><br>
+<i>Bey, Eudaly, Klaw, Lalumiere, Porter*, Rogers</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Ghost Stories</b><br>
+<i>Finn, Osborne, Rountree*, Sanger, Southard</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>10:30 PM</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+</table><p>
+<table border>
+<tr>
+<th>Sunday</th>
+<th>Ballroom D</th>
+<th>Ballroom E</th>
+<th>Ballroom F</th>
+<th>Southpark A</th>
+<th>Southpark B</th>
+<th>Conference Center</th>
+<th>Dealers' Room</th>
+</tr>
+<tr>
+<td valign=top>11:00 AM</td>
+<td rowspan=2 valign=top>
+<b>New Feminist SF</b><br>
+<i>Downum*, N. J. Moore, Sanger, Yoachim</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Hardcore Business of Writing</b><br>
+<i>Cheney, Jacobs, Maresca, Swendson*, Wells</i>
+</td>
+<td rowspan=2 valign=top>
+<b>How I Wrote <i>The Grace of Kings</i></b><br>
+<i>Liu</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Becoming a Rocket Scientist</b><br>
+<i>Abell*, Frank, Jackson, Ledbetter</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Gloria Oliver</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Patrick Sullivan</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Marmell, Reisman, Rountree</i>
+</td>
+</tr>
+<tr>
+<td valign=top>11:30 AM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Carrie Richerson</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Jaime Lee Moyer</i>
+</td>
+</tr>
+<tr>
+<td valign=top>Noon</td>
+<td rowspan=2 valign=top>
+<b>Writing Fiction from a Gender, Ethnic, Cultural, or Temporal Viewpoint Other Than Your Own</b><br>
+<i>Finn, Mandala*, Prevost, Thomas, Wright</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Special Guest Interview</b><br>
+<i>Gibbons*, Morrow</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Performing Major Surgery on Your Novel</b><br>
+<i>Cargill, Cheney*, Chu, Marmell, Sarath, Wood</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Classic SF Back in Print</b><br>
+<i>Cupp, Hardy, Person*, Wagner, Weisman</i>
+</td>
+<td rowspan=2 valign=top>
+<b>It's 2015, the Year of Back to the Future 2: Where are our Hoverboards?</b><br>
+<i>Abell, Sherlock, Porter*, Waldrop</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Reading</b><br>
+<i>Stina Leicht</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Blaschke, Clevenger, Duchamp, P. J. Hoover</i>
+</td>
+</tr>
+<tr>
+<td valign=top>12:30 PM</td>
+</tr>
+<tr>
+<td valign=top>1:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Learning from Others' Mistakes: Writing Errors to Avoid</b><br>
+<i>Burton, Eudaly, Finn*, Latner, Ward, Swendson</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Pictionary</b><br>
+<i>Campbell, Chang, Kelley, Sherlock, C. Siros</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Visit to Two Small Planets</b><br>
+<i>Gibbons</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Short Fiction You Should Have Read Last Year</b><br>
+<i>Fischer, Rylander, Southard, Schwarz</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Michelle Muenzler</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Reading</b><br>
+<i>L. Timmel Duchamp</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Klaw, Lalumiere, Ledbetter, Leicht, Maresca, Prevost</i>
+</td>
+</tr>
+<tr>
+<td valign=top>1:30 PM</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Carrie Clevenger</i>
+</td>
+</tr>
+<tr>
+<td valign=top>2:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Reading</b><br>
+<i>James Morrow</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Blogging and Podcasting as Fan Activity</b><br>
+<i>Landon, Porter, Wagner</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Book Covers: The Good, the Bad, and the Ugly</b><br>
+<i>P. J. Hoover, Kelley*, Klaw, Moyer, W. Siros, Weisman</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td rowspan=2 valign=top>
+<b>The Magic of Collaboration</b><br>
+<i>Brust, Cargill, Clevenger*, de Orive, Mandala, Marmell, Rountree</i>
+</td>
+<td valign=top>
+<b>Reading</b><br>
+<i>Rebecca Schwarz</i>
+</td>
+<td rowspan=2 valign=top>
+<b>Autographing</b><br>
+<i>Rose, Oliver, Southard, Swendson, Yoachim</i>
+</td>
+</tr>
+<tr>
+<td valign=top>2:30 PM</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>3:00 PM</td>
+<td rowspan=2 valign=top>
+<b>Reading</b><br>
+<i>Howard Waldrop</i>
+</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+<tr>
+<td valign=top>3:30 PM</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+<td halign=top>&nbsp;</td>
+</tr>
+</table>
+</div>
