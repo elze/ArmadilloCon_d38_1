@@ -8,6 +8,7 @@ var titleDictionary = {
   "guests": "Guests",
   "hotel": "Hotel",
   "policies": "Policies",
+  "program_book": "Program Book",
   "register": "Register",
   "sched": "Detailed Schedule",
   "writers_workshop": "Writers' workshop"};
@@ -77,6 +78,11 @@ angular
 
             .when('/policies', {
                 templateUrl : 'policies.html',
+	        controller  : 'mainController'
+            })
+
+            .when('/program_book', {
+                templateUrl : 'programBook.html',
 	        controller  : 'mainController'
             })
 

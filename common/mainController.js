@@ -24,7 +24,7 @@ function mainController($scope, $location, $routeParams, $rootScope, $http) {
 
     $scope.featured_guests = {
 				  "chu": {person:'Wesley Chu', aname: "Wesley_Chu", shortname: "Chu", title:"Guest of Honor", website: "wesleychu.com", bio: "Wesley Chu is the bestselling author of the Tao series from Angry Robot Books and a two-time nominee for the John W. Campbell Award for Best New Writer. His debut, <i>The Lives of Tao</i>, won the Young Adult Library Services Association Alex Award and was a finalist for the Goodreads Choice Awards for Best Science Fiction. His next series, <i>Time Salvager</i>, published by Tor books, is out now.<br/>A consultant and former banking executive, Wesley is a Kung-Fu master and member of the Screen Actors Guild, and recently returned from summiting Kilimanjaro. He lives in Chicago with his wife Paula and their Airedale Terrier, Eva."},
-				  "hess": {person:'Christina Hess', aname: "Christina_Hess", shortname: "Hess", title:"Artist Guest", website: "", bio: ""}
+				  "hess": {person:'Christina Hess', aname: "Christina_Hess", shortname: "Hess", title:"Artist Guest", website: "", bio: ""},
 				  "keller": {person:'Ken Keller', aname: "Ken_Keller", shortname: "Keller", title:"Fan Guest", website: "", bio: ""}
     };
 
