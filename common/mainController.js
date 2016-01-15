@@ -103,8 +103,7 @@ function mainController($scope, $location, $routeParams, $rootScope, $http) {
 
     $scope.send_email = function () {
       var payload = "sender_name=" + $scope.sender_name + "&email_from=" + $scope.email_from + "&subject=" + $scope.subject + "&category=" + $scope.category + "&message=" + $scope.message;
-      $http.post("http://armadillocon.org/testang/emailForm.php",
-		 //"sender_name=Foo&email_from=elze.hamilton@gmail.com&subject=FooTest&category=website_feedback&message=TestFoo")
+      $http.post("http://armadillocon.org/d38/emailForm.php",
 		 payload)
       .then(function(response) {
 	  $scope.email_sent = "Thank you. We received your email.";

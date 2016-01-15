@@ -8,7 +8,7 @@
     <label for="sender_name">Your name* : </label> <span class="form-group" ng-show="receivedMode">{{ sender_name }}</span>
   </div>
   <div class="form-group" ng-hide="receivedMode">
-    <input type="text" name="sender_name" ng-model="sender_name" maxlength="80" required>
+    <input type="text" name="sender_name" ng-model="sender_name" maxlength="80" class="form-control" required>
     <span style="color:red" ng-show="contactForm.sender_name.$dirty && contactForm.sender_name.$invalid">
     	<span ng-show="contactForm.sender_name.$error.required">Sender name is required.</span>
     </span>
@@ -18,7 +18,7 @@
     <label for="email_from">Your e-mail address* : </label> <span class="form-group" ng-show="receivedMode">{{ email_from }}</span>
   </div>
   <div class="form-group" ng-hide="receivedMode">
-    <input type="email" id="email_from" name="email_from" ng-model="email_from" maxlength="80" ng-blur="setTheNeedToValidate()" ng-focus = "removeTheNeedToValidate()" required>
+    <input type="email" id="email_from" name="email_from" ng-model="email_from" maxlength="80" class="form-control" ng-blur="setTheNeedToValidate()" ng-focus = "removeTheNeedToValidate()" required>
     <span style="color:red" ng-show="rightMomentToValidate">
 		<span ng-show="contactForm.email_from.$error.required">Email is required.</span>
 		<span ng-show="contactForm.email_from.$error.email">Invalid email address.</span>
@@ -29,7 +29,7 @@
     <label for="subject">Subject* : </label> <span class="form-group" ng-show="receivedMode">{{ subject }}</span>
   </div>
   <div class="form-group" ng-hide="receivedMode">
-    <input type="text" id="subject" name="subject" ng-model="subject" maxlength="120" required>
+    <input type="text" id="subject" name="subject" ng-model="subject" maxlength="120" class="form-control" required>
     <span style="color:red" ng-show="contactForm.subject.$dirty && contactForm.subject.$invalid">
     	<span ng-show="contactForm.subject.$error.required">Subject is required.</span>
     </span>
@@ -40,7 +40,7 @@
   </div>
 
   <div class="form-group" ng-hide="receivedMode">
-	<select ng-model="category" name="category" required>
+	<select ng-model="category" name="category" class="form-control" required>
   	<option value="art_show_and_auction">Art Show and Auction</option>
   	<option value="chairs">Chairs</option>
   	<option value="childrens_programming">Children's Programming</option>
@@ -64,7 +64,7 @@
     <label for="message">Message* : </label> <span class="form-group" ng-show="receivedMode">{{ message }}</span>
   </div>
   <div class="form-group" ng-hide="receivedMode">
-    <textarea name="message" ng-model="message" cols="60" rows="5" required></textarea>
+    <textarea name="message" ng-model="message" cols="60" rows="5" class="form-control" required></textarea>
   </div>
   <span style="color:red" ng-show="contactForm.message.$dirty && contactForm.message.$invalid">
     	<span ng-show="contactForm.message.$error.required">Message is required.</span>

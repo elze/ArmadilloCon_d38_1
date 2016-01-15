@@ -124,12 +124,12 @@ angular
 
 	if (postscribeTheCounter) { 
 	  sc_project=2721969;	
-	  sc_invisible=0;
+	  sc_invisible=1;
 	  sc_security="5cfe5782";
 
 	  var scURL = 'http://www.statcounter.com/counter/counter.js';
 
-	  var scImg = 'http://c29.statcounter.com/2721969/0/5cfe5782/0/';
+	  var scImg = 'http://c29.statcounter.com/2721969/0/5cfe5782/1/';
 	  //postscribe('#statcounterInd', '');
 	  angular.element(document.getElementById('statcounterInd')).empty();
 	  postscribe('#statcounterInd', '<script src="' + scURL + '"><img class="statcounter" src="' + scImg + '" alt="free hit counter"><\/script>');
