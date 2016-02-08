@@ -1,79 +1,53 @@
 <?php
 
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
+include 'parseInput.php';
+
+include 'testInput.php';
+
+include 'contactForm.php';
+
+include 'permissionForm.php';
+
+include 'mailMessage.php';
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-	$error = "";
+	$postdata = file_get_contents("php://input");
+
+	$clean_key_value_pairs = parse_input($postdata);
 
     	$email_to1 = "dillowebdesigner@armadillocon.org";
 
-    	$email_to2 = "dillo37programming@gmail.com"; 
+	$email_to = "";
+	$email_subject = "";
+	$email_message = "";	
 
-	$sender_name = $_POST['sender_name']." 1";
-	$email_from = $_POST['email_from']." 2";
-    	$email_subject = $_POST['subject']." 3";
-	$category = $_POST['category']." 4";
-     	$email_message .= $_POST['message']." 5";
+	$email_addresses = array();
 
-	//print_r($_POST);
-
-	error_log("From POST: sender_name = ".$sender_name." email_from = ".$email_from." email_subject = ".$email_subject." category = ".$category." email_message = ".$email_message, 0);
-
-	/******
-	$keyValueStr = "";
-	foreach ($_POST as $key => $value) {	
-		$keyValueStr .= $key." = ".$value."^";
+	if ($clean_key_value_pairs['form_type'] == 'permission_slip') {
+		$error = permission_form_message($clean_key_value_pairs, $email_to, $email_subject, $email_message);
+		array_push($email_addresses, $email_to);
+		array_push($email_addresses, $email_to1);
 	}
-	echo $keyValueStr;
-	********/
-
-	$postdata = file_get_contents("php://input");	
-	//echo $postdata;
-
-	error_log("postdata = ".$postdata, 0);
-
- 	$clean_key_value_pairs = array();
-	
-	$jasonStrResponse = "";
-	$jasonStr = "{";
-	$pairs = explode("&", $postdata);
-	foreach ($pairs as $pair) {	
-		error_log("pair = ".$pair, 0);
-		list($key, $value) = explode("=", $pair);
-		$processedKey = test_input($key);
-		$processedValue = test_input($value);
-		$clean_key_value_pairs[$processedKey] = $processedValue;
-		$jasonStr .= '"'.$processedKey.'": "'.$processedValue.'",';
-		error_log("processedKey = ".$processedKey." processedValue = ".$processedValue, 0);		
-	}
-	$jasonStr = rtrim($jasonStr, ",");
-	$jasonStr .= "}";
-
-
-	include 'contactForm.php';
+	else {
+		$error = contact_form_message($clean_key_value_pairs, $email_to, $email_subject, $email_message);
+		array_push($email_addresses, $email_to);
+	}		
 
 	if (empty($error)) {
+		//$jasonStrResponse .= mail_message($email_to1, $clean_key_value_pairs['subject'], $email_message);
+		//$jasonStrResponse .= mail_message($email_to, $clean_key_value_pairs['subject'], $email_message);
+	
+		//$jasonStrResponse .= mail_message($email_to1, $email_subject, $email_message);
+		//$jasonStrResponse .= mail_message($email_to, $email_subject, $email_message);
 
-	$email_message = "Sender: ".$sender_name."\nSender email: ".$email_from."\nCategory: ".$category."\nMessage: ".$email_message;
+		error_log("About to send the message. email_addresses = ".print_r($email_address, 1), 0);
 
-	$headers = 'From: '.$email_to."\r\n".
-	'Reply-To: '.$email_to."\r\n" .
-	'X-Mailer: PHP/' . phpversion();
-	$headers1 = 'From: '.$email_to1."\r\n". 
-	'Reply-To: '.$email_to1."\r\n" .
-	'X-Mailer: PHP/' . phpversion();
-
-	$wasAccepted = mail($email_to, $email_subject, $email_message, $headers); 	 
-	//$wasAccepted1 = mail($email_to1, $email_subject, $email_message, $headers1); 
-
-	$jasonStrResponse .= '{"Email accepted for delivery": "'.$wasAccepted1.'"}';
-
+		foreach ($email_addresses as $email_address) {			
+			error_log("About to send the message. email_address = ".$email_address, 0);
+			$jasonStrResponse .= mail_message($email_address, $email_subject, $email_message);
+		}
 	}
 	else { 
 		$jasonStrResponse .= '{"error": "'.$error.'"}';

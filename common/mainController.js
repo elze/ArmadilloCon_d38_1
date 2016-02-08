@@ -22,6 +22,15 @@ function mainController($scope, $location, $routeParams, $rootScope, $http) {
     $scope.title = newTitle;
   }
 
+    $scope.closeThis = function () {
+        //console.log('closing');
+
+      for (var topLevelMenuKey in $scope.menuIsOpen) {
+	  if ($scope.menuIsOpen[topLevelMenuKey])
+	    $scope.menuIsOpen[topLevelMenuKey] = false;
+      }
+    }
+
     $scope.featured_guests = {
 				  "chu": {person:'Wesley Chu', aname: "Wesley_Chu", shortname: "Chu", title:"Guest of Honor", website: "wesleychu.com", bio: "Wesley Chu is the bestselling author of the Tao series from Angry Robot Books and a two-time nominee for the John W. Campbell Award for Best New Writer. His debut, <i>The Lives of Tao</i>, won the Young Adult Library Services Association Alex Award and was a finalist for the Goodreads Choice Awards for Best Science Fiction. His next series, <i>Time Salvager</i>, published by Tor books, is out now.<br/>A consultant and former banking executive, Wesley is a Kung-Fu master and member of the Screen Actors Guild, and recently returned from summiting Kilimanjaro. He lives in Chicago with his wife Paula and their Airedale Terrier, Eva."},
 				  "hess": {person:'Christina Hess', aname: "Christina_Hess", shortname: "Hess", title:"Artist Guest", website: "", bio: ""},
@@ -102,7 +111,7 @@ function mainController($scope, $location, $routeParams, $rootScope, $http) {
 			];
 
     $scope.send_email = function () {
-      var payload = "sender_name=" + $scope.sender_name + "&email_from=" + $scope.email_from + "&subject=" + $scope.subject + "&category=" + $scope.category + "&message=" + $scope.message;
+      var payload = "form_type=contact_form&sender_name=" + $scope.sender_name + "&email_from=" + $scope.email_from + "&subject=" + $scope.subject + "&category=" + $scope.category + "&message=" + $scope.message;
       $http.post("http://armadillocon.org/d38/emailForm.php",
 		 payload)
       .then(function(response) {
@@ -114,6 +123,21 @@ function mainController($scope, $location, $routeParams, $rootScope, $http) {
 	});
 
     };
+
+    $scope.send_permission_form = function () {
+      var payload = "form_type=permission_slip&sender_name=" + $scope.sender_name + "&email_from=" + $scope.email_from + "&manuscript_title=" + $scope.manuscript_title + "&subject=" + $scope.subject;
+      $http.post("http://armadillocon.org/d38/emailForm.php",
+		 payload)
+      .then(function(response) {
+	  $scope.email_sent = "Thank you. We received your permission slip.";
+	  $scope.receivedMode = true;
+	}, function (response) {
+	  $scope.email_sent = "An error occurred while trying to send your permission slip: " + response.error;
+	  $scope.receivedMode = true;
+	});
+
+    };
+
     
     $scope.setTheNeedToValidate = function () {
       $scope.rightMomentToValidate = true;
@@ -130,4 +154,37 @@ function mainController($scope, $location, $routeParams, $rootScope, $http) {
 	    $scope.meowData = response.data.cat;
 	  });
     };
+
+    $scope.menuIsOpen = {};
+    $scope.menuIsOpen['about'] = false;
+    $scope.menuIsOpen['contact'] = false;
+    $scope.menuIsOpen['participate'] = false;
+    $scope.menuIsOpen['program_book'] = false;
+    $scope.menuIsOpen['programming'] = false;
+    $scope.menuIsOpen['register'] = false;
+
+    $scope.topLevelUL = "top-level-ul-hidden";
+
+    $scope.processMenuEvents = function ($event) {
+      var aID = $event.target.id;
+      for (var topLevelMenuKey in $scope.menuIsOpen) {
+	if (aID === topLevelMenuKey) {
+	  if ($scope.menuIsOpen[topLevelMenuKey])
+	    $scope.menuIsOpen[topLevelMenuKey] = false;
+	  else
+	    $scope.menuIsOpen[topLevelMenuKey] = true;
+	}
+	else
+	  $scope.menuIsOpen[topLevelMenuKey] = false;
+      }
+    }
+
+    $scope.toggleMenu = function($event) {
+      //$scope.showTopLevelMenu = !$scope.showTopLevelMenu;
+      if ($scope.topLevelUL == "top-level-ul-visible")
+	$scope.topLevelUL = "top-level-ul-hidden";
+      else 
+	$scope.topLevelUL = "top-level-ul-visible";
+    }
+
 }

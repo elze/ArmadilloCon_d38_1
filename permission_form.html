@@ -1,0 +1,47 @@
+<div class="grid__col grid__col--3-of-5">
+<div ng-hide="receivedMode">
+  <h2>Permission Slip</h2>      
+    <p>All members of the Writers' Workshop need to fill out the following permission slip.</p>
+    <p>For the purposes of the ArmadilloCon Writers' Workshop only, I hereby give permission to the representatives of ArmadilloCon to print and/or electronically distribute my original work of fiction. </p>
+    <p>(<span lang="EN-IE" xml:lang="EN-IE"><strong>Please do not use pen names on workshop submissions</strong></span><strong>.</strong>)</p>
+</div>
+<div><h3>{{ email_sent }}</h3> </div>
+
+<form method="post" name="permissionForm" novalidate>
+  <div class="form-group">
+    <label for="sender_name">Name* : </label> <span class="form-group" ng-show="receivedMode">{{ sender_name }}</span>
+  </div>
+  <div class="form-group" ng-hide="receivedMode">
+    <input type="text" name="sender_name" ng-model="sender_name" maxlength="80" class="form-control" required>
+    <span style="color:red" ng-show="permissionForm.sender_name.$dirty && permissionForm.sender_name.$invalid">
+    	<span ng-show="permissionForm.sender_name.$error.required">Author name is required.</span>
+    </span>
+  </div>
+
+  <div class="form-group">
+    <label for="email_from">Email address* : </label> <span class="form-group" ng-show="receivedMode">{{ email_from }}</span>
+  </div>
+  <div class="form-group" ng-hide="receivedMode">
+    <input type="email" id="email_from" name="email_from" ng-model="email_from" maxlength="80" ng-blur="setTheNeedToValidate()" ng-focus = "removeTheNeedToValidate()" class="form-control" required>
+    <span style="color:red" ng-show="rightMomentToValidate">
+		<span ng-show="permissionForm.email_from.$error.required">Email is required.</span>
+		<span ng-show="permissionForm.email_from.$error.email">Invalid email address.</span>
+    </span>
+  </div>
+
+  <div class="form-group">
+    <label for="manuscript_title">Title of your work* : </label> <span class="form-group" ng-show="receivedMode">{{ manuscript_title }}</span>
+  </div>
+  <div class="form-group" ng-hide="receivedMode">
+    <input type="text" id="manuscript_title" name="manuscript_title" ng-model="manuscript_title" maxlength="120" class="form-control" required>
+    <span style="color:red" ng-show="permissionForm.manuscript_title.$dirty && contactForm.manuscript_title.$invalid">
+    	<span ng-show="permissionForm.subject.$error.required">Title of your work is required.</span>
+    </span>
+  </div>
+
+  <button type="submit" class="btn btn-default" ng-hide="receivedMode" ng-disabled="permissionForm.sender_name.$invalid || permissionForm.email_from.$invalid || permissionForm.manuscript_title.$invalid" ng-click="send_permission_form()">Submit</button>
+</form>
+
+<div id="statcounter"></div>
+
+</div>

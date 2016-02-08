@@ -4,9 +4,11 @@ var titleDictionary = {
   "contact" : "Contact",
   "dealers": "Dealers",
   "gaming": "Gaming",
+  "grid": "Program Grid",
   "guest_bios": "Guest bios",
   "guests": "Guests",
   "hotel": "Hotel",
+  "permission_form": "Permission Form",
   "policies": "Policies",
   "program_book": "Program Book",
   "register": "Register",
@@ -16,7 +18,8 @@ var titleDictionary = {
 angular
     .module('app', [
 		    'ngRoute',
-		    'ui.bootstrap'
+		    'angular-click-outside'
+		    //'ui.bootstrap'
 ])
 
 .config(function($routeProvider) {
@@ -74,6 +77,18 @@ angular
             .when('/hotel', {
                 templateUrl : 'hotel.html',
 		controller  : 'mainController'
+            })
+
+            .when('/permission_form', {
+                templateUrl : 'permission_form.html',
+                controller  : 'mainController'
+		//  controller  : 'myMainController'
+            })
+
+            .when('/permission_form/:receivedMode', {
+                templateUrl : 'permission_form.html',
+                controller  : 'mainController'
+		//  controller  : 'myMainController'
             })
 
             .when('/policies', {

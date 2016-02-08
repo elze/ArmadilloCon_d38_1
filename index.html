@@ -3,23 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600|Architects Daughter" rel="stylesheet" type="text/css" />
     	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600|Architects Daughter" rel="stylesheet"type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="Toast-master/css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="http://code.angularjs.org/1.4.7/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
-    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
     <script src="postscribe-master/htmlParser/htmlParser.js"></script>
     <script src="postscribe-master/postscribe.js"></script>
     <script src="app.js"></script>
     <script src="common/mainController.js"></script>
-    <script src="common/slidesController.js"></script>
+    <script src="common/clickoutside.directive.js"></script>
     <title>{{ title }} : ArmadilloCon 38</title>
 </head>
 <body ng-controller="mainController">
@@ -29,37 +26,37 @@
 
     <div class="menu-bar">
 	<label for="show-menu" class="show-menu">Show Menu</label>
-	<input type="checkbox" id="show-menu" role="button">
-		<ul id="menu">
-		<li>
-			<a href="#/">About &darr;</a>
-			<ul class="hidden">
-				<li><a href="#/about">About</a></li>
-				<li><a href="#/policies">Policies</a></li>
-				<li><a href="#/hotel">Hotel</a></li>
+	<button type="button" id="show-menu" ng-click="toggleMenu($event)"><i class="fa fa-bars"></i></button>
+		<ul ng-class="topLevelUL" id="menu">
+		<li class="menu-elem top-level-li">
+			<a id="about" class="top-level-link" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li" href="#/">About &darr;</a>
+			<ul class="menu-elem" ng-show="menuIsOpen['about']">
+				<li class="menu-elem" ng-click="menuIsOpen['about'] = false"><a class="dropdown-elem" href="#/about">About</a></li>
+				<li class="menu-elem" ng-click="menuIsOpen['about'] = false"><a class="dropdown-elem" href="#/policies">Policies</a></li>
+				<li class="menu-elem" ng-click="menuIsOpen['about'] = false"><a class="dropdown-elem" href="#/hotel">Hotel</a></li>
 			</ul>
 		</li>
-		<li>
-			<a href="#/guests">Programming &darr;</a>
-			<ul class="hidden">
-				<li><a href="#/guests">Guests</a></li>
-				<li><a href="#/guest_bios">Guest biographies</a></li>
-				<li><a href="#/grid">Programming Grid</a></li>
-				<li><a href="#/sched">Detailed Schedule</a></li>
+		<li class="menu-elem top-level-li">
+			<a id="programming" class="top-level-link" href="#/guests" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Programming &darr;</a>
+			<ul class="menu-elem hidden" ng-show="menuIsOpen['programming']">
+				<li class="menu-elem" ng-click="menuIsOpen['programming'] = false"><a class="dropdown-elem" href="#/guests">Guests</a></li>
+				<li class="menu-elem" ng-click="menuIsOpen['programming'] = false"><a class="dropdown-elem" href="#/guest_bios">Guest biographies</a></li>
+				<li class="menu-elem" ng-click="menuIsOpen['programming'] = false"><a class="dropdown-elem" href="#/grid">Programming Grid</a></li>
+				<li class="menu-elem" ng-click="menuIsOpen['programming'] = false"><a class="dropdown-elem" href="#/sched">Detailed Schedule</a></li>
 			</ul>
 		</li>
-		<li><a href="#/register">Register</a></li>
-		<li>
-			<a href="#/artshow">Participate &darr;</a>
-			<ul class="hidden">
-				<li><a href="#/artshow">Art Show</a></li>
-				<li><a href="#/dealers">Dealers</a></li>
-				<li><a href="#/gaming">Gaming</a></li>
-				<li><a href="#/writers_workshop">Writers' Workshop</a></li>
+		<li class="menu-elem top-level-li"><a id="register" class="top-level-link" href="#/register" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Register</a></li>
+		<li class="menu-elem top-level-li">
+			<a id="participate" class="top-level-link" href="#/artshow" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Participate &darr;</a>
+			<ul class="menu-elem hidden" ng-show="menuIsOpen['participate']">
+				<li class="menu-elem" ng-click="menuIsOpen['participate'] = false"><a class="dropdown-elem" href="#/artshow">Art Show</a></li>
+				<li class="menu-elem" ng-click="menuIsOpen['participate'] = false"><a class="dropdown-elem" href="#/dealers">Dealers</a></li>
+				<li class="menu-elem" ng-click="menuIsOpen['participate'] = false"><a class="dropdown-elem" href="#/gaming">Gaming</a></li>
+				<li class="menu-elem" ng-click="menuIsOpen['participate'] = false"><a class="dropdown-elem" href="#/writers_workshop">Writers' Workshop</a></li>
 			</ul>
 		</li>
-		<li><a href="#/contact">Contact</a></li>
-		<li><a href="#/program_book">Program Book</a></li>
+		<li class="menu-elem top-level-li"><a id="contact" class="top-level-link" href="#/contact" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Contact</a></li>
+		<li class="menu-elem top-level-li"><a id="program_book" class="top-level-link" href="#/program_book" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Program Book</a></li>
 	</ul>
     </div>
 
@@ -71,7 +68,7 @@
 <p class="header location-date"><b>Omni Southpark hotel, 4140 Governors Row, Austin, Texas 78744</b></p>
 
 <p class="guest">
-Guest of Honor: <a href="http://wesleychu.com/"><b>Wesley Chu</b></a> <i class="fa fa-asterisk"></i> Special Guest: <b>TBD</b> <i class="fa fa-asterisk"></i> Artist Guest: <b>Christina Hess</b> <i class="fa fa-asterisk"></i> Editor Guest: <b>TBD</b></a> <i class="fa fa-asterisk"></i> Fan Guest: <b>Ken Keller</b> <i class="fa fa-asterisk"></i> Toastmaster: <b>TBD</b>
+Guest of Honor: <a href="http://wesleychu.com/"><b>Wesley Chu</b></a> <i class="fa fa-asterisk"></i> Special Guest (Artist): <b>Dominick Saporano</b>  <i class="fa fa-asterisk"></i> Artist Guest: <b>Christina Hess</b> <i class="fa fa-asterisk"></i> Editor Guest: <b>TBD</b></a> <i class="fa fa-asterisk"></i> Fan Guest: <b>Ken Keller</b> <i class="fa fa-asterisk"></i> Toastmaster: <a href="https://joemckinney.wordpress.com"><b>Joe McKinney</b></a>
 </p>
 
 </div>

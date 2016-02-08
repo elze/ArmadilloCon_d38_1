@@ -6,8 +6,7 @@ div.menu-bar {
   margin: 10px 0px 50px 0px;
 }
 
-/*Strip the ul of padding and list styling*/
-ul {
+ul.menu-elem {
 	list-style-type:none;
 	margin:0;
 	padding:0;
@@ -15,14 +14,18 @@ ul {
 }
 
 /*Create a horizontal list with spacing*/
-li {
+li.menu-elem {
 	display:inline-block;
 	float: left;
 	margin-right: 1px;
 }
 
+li.menu-elem:hover a {
+	background: SlateBlue;
+}
+
 /*Style for menu links*/
-li a {
+li.menu-elem a {
 	display:block;
 	min-width:140px;
 	height: 50px;
@@ -34,90 +37,76 @@ li a {
 	text-decoration: none;
 }
 
-/*Hover state for top level links*/
-li:hover a {
-	background: SlateBlue;
-}
-
 /*Style for dropdown links*/
-li:hover ul a {
-	//background: #f3f3f3;
+li.menu-elem ul.menu-elem a {
   background: Lavender;
 	color: #2f3036;
 	height: 40px;
 	line-height: 40px;
 }
 
-/*Hover state for dropdown links*/
-li:hover ul a:hover {
+li.menu-elem ul.menu-elem a:hover {
+  background: Lavender;
 	background: SlateBlue;
 	color: #fff;
 }
 
-/*Hide dropdown links until they are needed*/
-li ul {
-	display: none;
-}
-
 /*Make dropdown links vertical*/
-li ul li {
+li.menu-elem ul.menu-elem li.menu-elem {
 	display: block;
 	float: none;
 }
 
 /*Prevent text wrapping*/
-li ul li a {
+li.menu-elem ul.menu-elem li.menu-elem a {
 	width: auto;
 	min-width: 100px;
 	padding: 0 20px;
 }
 
-/*Display the dropdown on hover*/
-ul li a:hover + .hidden, .hidden:hover {
-	display: block;
-}
-
-/*Style 'show menu' label button and hide it by default*/
-.show-menu {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-decoration: none;
-	color: #fff;
-	background: SlateBlue;
-	text-align: center;
-	padding: 10px 0;
-	display: none;
-}
-
-/*Hide checkbox*/
-input[type=checkbox]{
-    display: none;
-}
-
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
-    display: block;
+#show-menu {
+  display:none;
 }
 
 
 /*Responsive Styles*/
 
 @media screen and (max-width : 760px){
+
+.top-level-ul-hidden {
+		width: 100%;
+		display: none;
+}
+
+.top-level-ul-visible {
+    width: 100%;
+    display: block;
+    padding: 0 20px;
+    background: CornflowerBlue;
+    color: #000;
+}
+
+
 	/*Make dropdown links appear inline*/
-	ul {
+/*******
+	ul.menu-elem {
 		position: static;
 		display: none;
 	}
+******/
+
 	/*Create vertical spacing*/
-	li {
+	li.menu-elem {
 		margin-bottom: 1px;
 	}
 	/*Make all menu links full width*/
-	ul li, li a {
+	ul.menu-elem li.menu-elem, li.menu-elem a {
 		width: 100%;
 	}
 	/*Display 'show menu' link*/
-	.show-menu {
-		display:block;
+	#show-menu {
+    color: CornflowerBlue;
+    display:block;
 	}
 
 .header { 
@@ -138,108 +127,6 @@ input[type=checkbox]:checked ~ #menu{
 .subheader { 
   font-size: 0.7em;
  }
-
-
-.jumbotron-left-corner {
-  position:relative;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-}
-
-
-}
-
-
-.hover-image {
-  display: none;
-  border: 2px solid #8A2BE2;
-  border-radius: 10px;
-}
-
-.hover-small-caption {  
-  display: none;
-  background-color: #AAA1C4;
-  padding: 5px 5px 5px 5px;
-  border-radius: 10px;
-}
-
-.slide-image {
-  display: none;
-}
-
-
-
-.carousel-caption {
-  /****
-      max-width: 550px;
-      padding: 150px 20px 0px;
-      margin:0 auto;
-      margin-top: 400px;
-     ******/
-  text-align:center;
-  position: relative; 
-  right: auto;
-  left: auto;
-  text-shadow: none;
-  color: black;
-}
-
-ul.inside-text {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	list-style-type:disc;
-	position: static;
-}
-
-/*Create a horizontal list with spacing*/
-li.inside-text {
-	display:inline;
-	margin: 0;
-}
-
-.header { 
-  text-align: center;
- }
-
-
-.title-header { 
-  font-family: Impact, Charcoal, sans-serif;
-  font-size: 2.0em;
-  line-height: 50%;
- }
-
-.location-date { 
-  font-size: 1.0em;
- }
-
-.subheader { 
-  font-size: 0.7em;
- }
-
-
-.jumbotron-left-corner {
-  position:relative;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-}
-
-.jumbotron {
-  /* padding: 20px 30px 30px 150px; */
-  padding: 10px 10px 10px 10px;
-  background-color: #AAA1C4;
-}
-
-.jumbotron > h1 { 
-  font-family: Impact, Charcoal, sans-serif;
-  font-size: 40px;
- }
-
 
 .featured-guest-bio { 
   background-color: #EFF1F5;
@@ -247,14 +134,6 @@ li.inside-text {
   margin: 15px;
   padding: 15px;
  }
-
-
-/******
-
-a.guest-in-header { 
-    text-decoration: none; 
- }
-**********/
 
 a.guest-name {  
     color: black; 
@@ -288,99 +167,6 @@ p.guest > a {
   margin: auto;
  }
 
-ul.participant-index-ul { 
-	margin: 0;
-	padding: 0;
-	border: 0;
-  display: block;
-  clear: right;
-  clear: left;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	list-style-type:disc;
-	position: static;
- }
-
-
-.participant-index-ul > li { 
-	display: list-item;
-  clear: left;
-	margin: 0;
-  background-color: transparent;
-}
-
-.participant-index-ul > li a { 
-	display: inline;
-  height: auto;
-  min-width: 0;
-	margin: 0;
-  font-family: "PT Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:  #0000EE;
-  background-color: transparent;
-}
-
-.participant-index-ul > li a.guest-name {  
-    color: black; 
-    text-decoration: none; 
-}
-
-
-.form-control {
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-.form-control:focus {
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-}
-.form-control::-moz-placeholder {
-  color: #999;
-  opacity: 1;
-}
-.form-control:-ms-input-placeholder {
-  color: #999;
-}
-.form-control::-webkit-input-placeholder {
-  color: #999;
-}
-.form-control[disabled],
-.form-control[readonly],
-fieldset[disabled] .form-control {
-  background-color: #eee;
-  opacity: 1;
-}
-.form-control[disabled],
-fieldset[disabled] .form-control {
-  cursor: not-allowed;
-}
-textarea.form-control {
-  height: auto;
-}
-input[type="search"] {
-  -webkit-appearance: none;
-}
-
-.centered-footer { 
-  text-align: center;
- }
-
 tr:nth-child(even) {
   background-color: Lavender;
 }
@@ -393,3 +179,4 @@ tr:nth-child(odd) {
 td { 
   padding: 3px 5px;
 }
+
