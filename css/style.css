@@ -68,6 +68,14 @@ li.menu-elem ul.menu-elem li.menu-elem a {
   display:none;
 }
 
+.armad-footer { 
+  font-size: 0.7em;
+ }
+
+.title-header { 
+  font-size: 3.0em; 
+  font-family: 'Architects Daughter', cursive;
+ }
 
 /*Responsive Styles*/
 
@@ -127,6 +135,7 @@ li.menu-elem ul.menu-elem li.menu-elem a {
 .subheader { 
   font-size: 0.7em;
  }
+
 
 .featured-guest-bio { 
   background-color: #EFF1F5;

@@ -10,11 +10,24 @@ function chunk(arr, size) {
       return newArr;
     };
 
+
 angular.module('app').filter('unsafe', function($sce) {
     return function(val) {
         return $sce.trustAsHtml(val);
     };
+  }).directive('a', function() {
+    return {
+        restrict: 'E',
+        link: function(scope, elem, attrs) {
+            if (attrs.ngClick && attrs.href === '#'){
+                elem.on('click', function(e){
+                    e.preventDefault();
+                });
+            }
+        }
+   };
 });
+
 
 function mainController($scope, $location, $routeParams, $rootScope, $http) { 
 

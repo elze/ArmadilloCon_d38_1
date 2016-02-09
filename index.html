@@ -25,11 +25,11 @@
 <div class="grid__col grid__col--4-of-5">
 
     <div class="menu-bar">
-	<label for="show-menu" class="show-menu">Show Menu</label>
+	<label for="show-menu" id="show-menu">Show Menu</label>
 	<button type="button" id="show-menu" ng-click="toggleMenu($event)"><i class="fa fa-bars"></i></button>
 		<ul ng-class="topLevelUL" id="menu">
 		<li class="menu-elem top-level-li">
-			<a id="about" class="top-level-link" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li" href="#/">About &darr;</a>
+			<a id="about" class="top-level-link" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li" href="#">About &darr;</a>
 			<ul class="menu-elem" ng-show="menuIsOpen['about']">
 				<li class="menu-elem" ng-click="menuIsOpen['about'] = false"><a class="dropdown-elem" href="#/about">About</a></li>
 				<li class="menu-elem" ng-click="menuIsOpen['about'] = false"><a class="dropdown-elem" href="#/policies">Policies</a></li>
@@ -37,7 +37,7 @@
 			</ul>
 		</li>
 		<li class="menu-elem top-level-li">
-			<a id="programming" class="top-level-link" href="#/guests" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Programming &darr;</a>
+			<a id="programming" class="top-level-link" href="#" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Programming &darr;</a>
 			<ul class="menu-elem hidden" ng-show="menuIsOpen['programming']">
 				<li class="menu-elem" ng-click="menuIsOpen['programming'] = false"><a class="dropdown-elem" href="#/guests">Guests</a></li>
 				<li class="menu-elem" ng-click="menuIsOpen['programming'] = false"><a class="dropdown-elem" href="#/guest_bios">Guest biographies</a></li>
@@ -47,7 +47,7 @@
 		</li>
 		<li class="menu-elem top-level-li"><a id="register" class="top-level-link" href="#/register" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Register</a></li>
 		<li class="menu-elem top-level-li">
-			<a id="participate" class="top-level-link" href="#/artshow" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Participate &darr;</a>
+			<a id="participate" class="top-level-link" href="#" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Participate &darr;</a>
 			<ul class="menu-elem hidden" ng-show="menuIsOpen['participate']">
 				<li class="menu-elem" ng-click="menuIsOpen['participate'] = false"><a class="dropdown-elem" href="#/artshow">Art Show</a></li>
 				<li class="menu-elem" ng-click="menuIsOpen['participate'] = false"><a class="dropdown-elem" href="#/dealers">Dealers</a></li>
@@ -55,8 +55,8 @@
 				<li class="menu-elem" ng-click="menuIsOpen['participate'] = false"><a class="dropdown-elem" href="#/writers_workshop">Writers' Workshop</a></li>
 			</ul>
 		</li>
-		<li class="menu-elem top-level-li"><a id="contact" class="top-level-link" href="#/contact" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Contact</a></li>
-		<li class="menu-elem top-level-li"><a id="program_book" class="top-level-link" href="#/program_book" ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Program Book</a></li>
+		<li class="menu-elem top-level-li"><a id="contact" class="top-level-link" href="#/contact ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Contact</a></li>
+		<li class="menu-elem top-level-li"><a id="program_book" class="top-level-link" href="#/program_book ng-click="processMenuEvents($event)" click-outside="closeThis()" outside-if-not="top-level-li">Program Book</a></li>
 	</ul>
     </div>
 
@@ -78,20 +78,20 @@ Guest of Honor: <a href="http://wesleychu.com/"><b>Wesley Chu</b></a> <i class="
 
 <div id="statcounterInd"></div>
 
-<div class="subheader grid__col grid__col--3-of-12">
-    <p><a href="https://www.facebook.com/armadillocon"><i class="fa fa-facebook-square"></i> Connect with ArmadilloCon on Facebook</a><br /><a href="https://twitter.com/armadillocon"><i class="fa fa-twitter-square"></i> Follow ArmadilloCon on Twitter</a></p>
+<div class="grid__col grid__col--3-of-12">
+    <p><a href="https://www.facebook.com/armadillocon" class="armad-footer"><i class="fa fa-facebook-square"></i> Connect with ArmadilloCon on Facebook</a><br /><a class="armad-footer" href="https://twitter.com/armadillocon"><i class="fa fa-twitter-square"></i> Follow ArmadilloCon on Twitter</a></p>
 </div>
-
-<div class="subheader grid__col centered-footer grid__col--3-of-12">
-    <p>Website by <a href="http://geekitude.com">Elze Hamilton</a></p>
+<br/>
+<div class="grid__col centered-footer grid__col--3-of-12">
+    <p class="armad-footer">Website by <a href="http://geekitude.com">Elze Hamilton</a></p>
 </div>
-
-<div class="subheader grid__col grid__col--3-of-12">
-    <p>To <a href="http://armadillocon.org/d37">ArmadilloCon 37 (2015) website</a></p>
+<br/>
+<div class="grid__col grid__col--3-of-12">
+    <p class="armad-footer">To <a href="http://armadillocon.org/d37">ArmadilloCon 37 (2015) website</a></p>
 </div>
     
                 
-<div class="subheader grid__col centered-footer grid__col--3-of-3">2016 ArmadilloCon 38</div>
+<div class="grid__col centered-footer grid__col--3-of-3"><span class="armad-footer">2016 ArmadilloCon 38</span></div>
 
 
 </body>
